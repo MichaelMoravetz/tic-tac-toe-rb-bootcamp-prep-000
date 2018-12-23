@@ -106,5 +106,5 @@ end
 
 def play(board)
  until (won?(board) || draw?(board))
- turn
+ turn(board)
 end
