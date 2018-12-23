@@ -105,5 +105,6 @@ def input_to_index(user_input)
 end
 
 def play(board)
- 
+ until (won?(board) || draw?(board))
+ turn
 end
