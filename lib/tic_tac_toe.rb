@@ -107,13 +107,12 @@ end
 def play(board)
   turn(board)
  until (won?(board) || draw?(board))
- turn(board)
+   turn(board)
+  end
+   if won?(board)
+     puts "Congratulations #{winner(board)}"
+     if draw?(board)
+       puts "Cat's Game!"
+    end
  end
- if won?(board)
-   puts "Congratulations #{winner(board)}"
-   if draw?(board)
-     puts "Cat's Game!"
-   end
- end
- end
- end
+ 
