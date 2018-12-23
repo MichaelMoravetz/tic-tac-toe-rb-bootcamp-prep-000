@@ -104,3 +104,10 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+def play(board)
+  counter = 0 
+  while counter < 9
+    turn(board)
+    counter += 1
+  end
+end
